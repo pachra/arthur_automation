@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-15T14:04:05.233Z",
+    "end": "2021-12-15T14:04:22.401Z",
+    "duration": 17168,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3828be76-bbcd-492d-a5d8-84af4dd630ea",
+      "title": "",
+      "fullFile": "cypress/integration/authen/login.spec.js",
+      "file": "cypress/integration/authen/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8d48b884-8d28-471d-a0f5-a711a087b29b",
+          "title": "Login to system",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "I procees to the AUT's login page",
+              "fullTitle": "Login to system I procees to the AUT's login page",
+              "timedOut": null,
+              "duration": 3850,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('BaseUrl'));",
+              "err": {},
+              "uuid": "7ccf28c6-2a4c-476f-af69-a706dbd901c4",
+              "parentUUID": "8d48b884-8d28-471d-a0f5-a711a087b29b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "I enter username and password",
+              "fullTitle": "Login to system I enter username and password",
+              "timedOut": null,
+              "duration": 920,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.inputData('input[name=\"data[User][email]\"]', Cypress.env('username'));\ncy.inputData('input[name=\"data[User][password]\"]', Cypress.env('password'));",
+              "err": {},
+              "uuid": "f7ead762-6ea2-4d74-bc40-258529cd16f2",
+              "parentUUID": "8d48b884-8d28-471d-a0f5-a711a087b29b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "I click on the login button",
+              "fullTitle": "Login to system I click on the login button",
+              "timedOut": null,
+              "duration": 9394,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=submit]').click();",
+              "err": {},
+              "uuid": "9e1ffa69-69db-4b0c-879e-69f49733ff9b",
+              "parentUUID": "8d48b884-8d28-471d-a0f5-a711a087b29b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "I will be able to login to the AUT",
+              "fullTitle": "Login to system I will be able to login to the AUT",
+              "timedOut": null,
+              "duration": 74,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('eq', Cypress.env('dashboard'));",
+              "err": {},
+              "uuid": "0a5ffc8a-e9c1-4565-87cb-12da717c8f42",
+              "parentUUID": "8d48b884-8d28-471d-a0f5-a711a087b29b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7ccf28c6-2a4c-476f-af69-a706dbd901c4",
+            "f7ead762-6ea2-4d74-bc40-258529cd16f2",
+            "9e1ffa69-69db-4b0c-879e-69f49733ff9b",
+            "0a5ffc8a-e9c1-4565-87cb-12da717c8f42"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14238,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
